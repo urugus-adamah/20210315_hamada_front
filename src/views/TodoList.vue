@@ -5,11 +5,18 @@
       
       
       <div class="list">
-        <div class="add flex">
+        <div class="add-list flex">
           <input class="inp-add" type="text">
           <button class="btn-add">追加</button>
         </div>
-        <div class="update flex">
+        <div class="update-list flex">
+          <input type="text" class="inp-update">
+          <div class="btn-up-del"> 
+            <button class="btn-update">更新</button>
+            <button class="btn-delete">削除</button>
+          </div>
+        </div>
+        <div class="update-list flex">
           <input type="text" class="inp-update">
           <div class="btn-up-del"> 
             <button class="btn-update">更新</button>
@@ -51,12 +58,13 @@
   .list{
     width: 100%;
   }
-  .add {
+  .add-list {
     margin: 15px 0;
     justify-content: space-between;
   }
-  .update{
+  .update-list{
     justify-content: space-between;
+    margin-bottom: 10px;
   }
   input{
     font-size: 18px;
@@ -71,18 +79,17 @@
   .inp-update{
     width: 30%;
   }
- 
+
   button{
-    margin-left: 5px;
-    padding: 5px 15px;
+    padding: 8px 15px;
     background-color: transparent;
-    border: solid 2px;
+    border: 2px solid;
     border-radius: 5px;
     font-size: 12px;
     cursor: pointer;
     font-weight: bold;
     transition: 0.5s;
-    outline: none;
+    outline: none;    
   }
   
   .btn-add{
@@ -106,4 +113,9 @@
     background-color: turquoise;
     color: white;
   }
+
+  .btn-delete{
+    margin-left: 5px;
+  }
+
   </style>
