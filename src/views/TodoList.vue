@@ -101,7 +101,7 @@ created(){
   }
   .update-list{
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   input{
     font-size: 18px;
