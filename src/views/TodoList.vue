@@ -38,7 +38,7 @@ methods:{
     const sendData = {
       todo:this.todo,
     };
-    await axios.post("https://quiet-headland-16596.herokuapp.com/api/todo/",sendData)
+    await axios.post("https://quiet-headland-16596.herokuapp.com/api/todo",sendData)
     // await axios.post("http://127.0.0.1:8000/api/todo/",sendData);
     await this.getList();
   },
