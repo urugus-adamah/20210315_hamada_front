@@ -30,7 +30,7 @@ data(){
 },
 methods:{
   async getList(){
-    const resData = await axios.get("https://quiet-headland-16596.herokuapp.com/api/todo/");
+    const resData = await axios.get("https://quiet-headland-16596.herokuapp.com/api/todo");
     // const resData = await axios.get("http://127.0.0.1:8000/api/todo/");
     this.todoLists = resData.data.data;
   },
